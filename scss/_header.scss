@@ -1,0 +1,234 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  user-select: none;
+  
+  .struct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+
+    .logo {
+      display: inline-block;
+      height: 30px;
+      img {
+        height: 100%;
+      }
+    }
+
+    .nav {
+      display: inline-block;
+      list-style-type: none;
+      color: #ffffff;
+
+      @media all and (max-width:1100px){
+        display: none;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 30px;
+
+        transition: 0.3s;
+        cursor: pointer;
+        position: relative;
+
+        i {
+          transform: translateY(15%);
+          margin-left: 3px;
+          display: inline-block !important;
+        }
+
+        .drop_list {
+          display: none;
+          overflow: hidden;
+          flex-direction: column;
+          position: absolute;
+          width: 200px;
+          height: auto;
+          background: white;
+          transform: translateY(20px);
+          .drop_list_item {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 55px;
+            color: $theme;
+            padding-left: 17px;
+            transition: 0.4s;
+            width: 100%;
+            font-weight: normal !important;
+
+            &:hover {
+              background: $theme;
+              color: white;
+              transition: 0.4s;
+            }
+          }
+        }
+      }
+      .active {
+        transition: 0.3s;
+        position: relative;
+        font-weight: bold;
+        &:after {
+          content: " ";
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          transform: translateY(10px);
+          width: 30px;
+          height: 4px;
+          border-radius: 10px;
+          background: white;
+          transition: 0.3s;
+        }
+      }
+
+      #drop_pages{
+        &:after{
+          display: none;
+        }
+      }
+
+    }
+
+    .tools {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      .swicht_lang {
+        display: inline-flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 13px;
+        font: normal normal bold 14px/14px Lato;
+        position: relative;
+        .text {
+          display: inline-block;
+
+          margin-right: 9px;
+        }
+        .ico {
+          display: inline-block;
+        }
+
+        .lang_list {
+          display: none;
+
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 12px;
+          border-radius: 4px;
+          background: white;
+          color: black;
+          font-size: 13px;
+          position: absolute;
+
+          bottom: -4px;
+          left: 0px;
+          transform: translateY(100%);
+          font: normal normal bold 14px/14px Lato;
+        }
+      }
+
+      .socials {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+
+        @media all and (max-width:529px){
+          display: none;
+        }
+
+        .social_item {
+          font-size: 20px;
+          color: white;
+          display: inline-block;
+          margin-left: 20px;
+          margin-right: 0px;
+          cursor: pointer;
+        }
+      }
+
+      .btn_menu{
+        display: none;
+        @media all and (max-width:1100px){
+          display: inline-block;
+          color: white;
+          font-size: 25px;
+          margin-left: 70px;
+        }
+
+        @media all and (max-width:400px){
+          margin-left: 25px;
+        }
+
+      }
+
+      
+
+    }
+  }
+
+  .shape_logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 430px;
+    z-index: 1;
+    transform: 0.3s;
+
+    @media all and (max-width: 1342px) {
+      width: 380px;
+    }
+    @media all and (max-width: 1280px) {
+      width: 417px;
+    transform: translateX(-150px);
+    }
+    @media all and (max-width: 650px) {
+      display: none;
+    }
+
+
+    
+
+  }
+
+  .shape_logo_off {
+    width: 0px;
+    transform: 0.3s;
+  }
+}
+
+.header_on {
+  background: white;
+  transform: 0.3s;
+
+  .nav,
+  .swicht_lang,
+  .social_item {
+    color: $theme !important;
+    transform: 0.3s;
+  }
+
+  .btn_menu{
+    color: $theme !important;
+  }
+
+}
