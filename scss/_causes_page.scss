@@ -1,0 +1,115 @@
+.causes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .struct {
+    display: block;
+    width: 90%;
+    .text_title {
+      font: normal normal bold 48px/64px Lora;
+      letter-spacing: 0.02px;
+      color: #000000;
+      text-align: center !important;
+      width: 100%;
+      margin-bottom: 50px;
+
+      @media all and (max-width:1171px){
+       font-size: 30px;
+       line-height: normal;
+      }
+    }
+
+    .flex_causes_container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      .cause_box {
+        display: block;
+        width: 377px;
+        height: auto;
+        margin-bottom: 80px;
+
+        @media all and (max-width:1300px){
+            width: 48%;
+        }
+        @media all and (max-width:800px){
+            width:100%;
+        }
+
+        .images {
+          display: block;
+          height: 300px;
+          border-radius: 20px;
+          overflow: hidden;
+          width: 100%;
+        }
+
+        .cause_title {
+          font: normal normal bold 28px/38px Lora;
+          letter-spacing: 0.01px;
+          color: #333333;
+          display: block;
+          text-align: left;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .cause_descr {
+          display: block;
+          text-align: left;
+          font: normal normal normal 18px/28px Lato;
+          letter-spacing: 0px;
+          color: #0000008f;
+          margin-bottom: 20px;
+        }
+        .flex_donate_info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 8px;
+          .item {
+            display: inline-block;
+            font: normal normal normal 16px/30px Lato;
+            letter-spacing: 0.01px;
+            color: #333333;
+            span {
+              opacity: 0.7;
+            }
+          }
+        }
+        .percentage_donate {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          height: 16px;
+          background: #dcdcdc 0% 0% no-repeat padding-box;
+          border-radius: 100px;
+          span {
+            display: block;
+            height: 99%;
+            border-radius: 100px;
+            background: $theme;
+          }
+        }
+
+        .donate {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 182px;
+          height: 58px;
+          background: $theme;
+          border-radius: 15px;
+          margin-top: 30px;
+          color: white;
+          font: normal normal bold 14px/62px Lato;
+          letter-spacing: 0.01px;
+          color: #ffffff;
+          text-transform: capitalize;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

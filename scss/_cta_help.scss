@@ -131,6 +131,9 @@
           @media all and (max-width: 641px) {
             width: 75%;
           }
+          @media all and (max-width: 367px) {
+            width: 100%;
+           }
 
           .btn_item {
             display: inline-flex;
@@ -152,6 +155,9 @@
             }
 
 
+            
+
+
 
 
           }
@@ -170,6 +176,9 @@
           cursor: pointer;
           @media all and (max-width: 445px) {
            font-size: 35px;
+          }
+          @media all and (max-width: 367px) {
+           display: none;
           }
         }
       }
@@ -209,5 +218,136 @@
         }
       }
     }
+
+    .ilustration_impact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    img{
+      width: 100%;
+      display: inline-block;
+    }
+    }
   }
+}
+
+
+.impact_block{
+padding-top: 50px;
+padding-bottom: 50px;
+
+
+@media all and (max-width:800px){
+  .ilustration_impact{
+    width: 70% !important;
+  }
+}
+
+
+}
+
+.cause_detail{
+  background: none;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 100px !important;
+.struct  {
+  width: 90% !important;
+}
+.struct .cause_part h1 {
+  color: black;
+}
+ .struct .cause_part h4 {
+
+  color: rgba(0, 0, 0, 0.664);
+}
+.struct .cause_part .percent_block .stat_part{
+  color: black;
+}
+
+.struct .cause_part .percent_block .bar_percent{
+  background: rgba(0, 0, 0, 0.822);
+}
+
+.bar_percent_rich{
+  background: $theme !important;
+}
+
+.btn_item_theme{
+  background: $theme !important;
+  color: white;
+}
+.btn_item_clear{
+  color: $theme !important;
+  border-color: $theme !important;
+display: flex;
+justify-content: center;
+align-items: center;
+  i{
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.ico_love{
+  color: $theme !important;
+}
+
+.cause_ilustration .img{
+  transform: translateY(0px) !important;
+height: 550px !important;
+}
+.donate_input{
+width: 100%;
+display: block;
+margin-top: 50px;
+border:none;
+border: 1px solid ;
+height:70px;
+border-radius: 17px;
+background: white;
+padding-left: 20px;
+color: rgba(0, 0, 0, 0.822);
+font-size: 17px;
+
+}
+
+.detail_donate{
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+bottom: 0px;
+left: 50%;
+transform: translateY(50%) translateX(-50%);
+height: 80px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 15px 15px 60px #959FC033;
+padding-left: 30px;
+padding-right: 30px;
+border-radius: 18px;
+font-weight: 600;
+
+
+@media all and (max-width:1171px){
+  width: 250px;
+transform: translateY(10%) translateX(-50%);;  
+}
+@media all and (max-width:491px){
+  width: 200px;
+font-size: 14px;
+line-height: normal;
+height: 60px;
+
+}
+
+
+span{
+  color: $theme;
+  display: inline-block;
+  margin-right:10px;
+}
+}
+
 }

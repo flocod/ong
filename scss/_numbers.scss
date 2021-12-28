@@ -1,0 +1,117 @@
+.Numbers_block{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+background: $theme;
+padding-top: 100px;
+padding-bottom: 100px;
+@media all and (max-width:478px){
+    padding-top: 50px;
+    padding-bottom: 30px;
+   
+ }
+.struct{
+    display: block;
+    width: 90%;
+}
+.flex_numbers{
+display: flex;
+justify-content: space-between;
+width: 100%;
+margin-top: 110px;
+flex-wrap: wrap;
+
+.numbers_item{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 24%;
+height: auto;
+padding-top: 0px;
+padding-bottom: 30px;
+background: white;
+border-radius: 20px;
+position: relative;
+
+@media all and (max-width:1171px){
+    width: 48%;
+    margin-bottom: 90px;
+}
+
+@media all and (max-width:478px){
+    width: 100%;
+   
+ }
+
+.struct_number{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 80%;
+text-align: center;
+
+
+
+.logo_number{
+    display: flex;
+    color: $theme;
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    background: $theme;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 0px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border:2px solid white;
+
+    @media all and (max-width:627px){
+       font-size: 28px !important;
+       width: 80px;
+       height: 80px;
+    }
+    
+
+}
+
+.nbre{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 65px;
+    @media all and (max-width:627px){
+        font-size: 28px !important;
+        margin-top: 50px
+    }
+  
+}
+
+.title_number{
+display: block;
+text-transform: uppercase;
+font-size: 17px;
+font-weight: 600;
+
+@media all and (max-width:627px){
+    font-size: 12px ;
+}
+
+}
+
+
+}
+
+}
+
+
+
+
+}
+
+}

@@ -1,9 +1,9 @@
 // color
-$theme:#336851; //#024222;
+$theme: #336851; //#024222;
 //polices
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 /**
 Thin 100
 Extra-light 200
@@ -87,11 +87,10 @@ a {
   margin-top: 180px;
   margin-bottom: 50px;
 
-  @media all and (max-width:1100px){
+  @media all and (max-width: 1100px) {
     margin-top: 80px !important;
     margin-bottom: 80px !important;
   }
-
 }
 
 .btn_more {
@@ -110,17 +109,13 @@ a {
   border-radius: 14px;
   cursor: pointer;
 
-
   @media all and (max-width: 851px) {
-   margin-top: 30px;
-   width: 190px;
-   height: 65px;
-   font-size: 16px;
-   line-height: normal;
+    margin-top: 30px;
+    width: 190px;
+    height: 65px;
+    font-size: 16px;
+    line-height: normal;
   }
-
-
-
 }
 
 .orne_left {
@@ -136,7 +131,7 @@ a {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  transform: translateX(40%) translateY(50%);
+  transform: translateX(0%) translateY(50%);
   width: 100px;
 }
 
@@ -148,10 +143,10 @@ a {
   transition: 0.3s;
   user-select: none;
 
-  @media all and (max-width:1100px){
+  @media all and (max-width: 1100px) {
     width: 140px;
   }
-  @media all and (max-width:1100px){
+  @media all and (max-width: 1100px) {
     width: 90px;
   }
 
@@ -166,7 +161,6 @@ a {
     color: #b5b5b5;
     transition: 0.3s;
     cursor: pointer;
-    
 
     &:after {
       content: " ";
@@ -217,10 +211,9 @@ a {
     font-size: 33px !important;
     transition: 0.3s;
 
-    @media all and (max-width:1100px){
+    @media all and (max-width: 1100px) {
       font-size: 14px !important;
     }
-
   }
 
   .active {
@@ -235,7 +228,6 @@ a {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  
 
   .title2 {
     font: normal normal bold 48px/55px Lora;
@@ -243,16 +235,32 @@ a {
     color: #000000;
     display: inline-block;
 
-    @media all and (max-width:1100px){
+    @media all and (max-width: 1100px) {
       font-size: 30px;
       line-height: 45px;
     }
-    @media all and (max-width:1100px){
+    @media all and (max-width: 1100px) {
       font-size: 23px;
       line-height: 30px;
-     
     }
+  }
 
+  .btn_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 224px;
+    height: 70px;
+    background: $theme 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+
+    @media all and (max-width: 1245px) {
+      height: 50px;
+      width: 140px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -340,3 +348,125 @@ a {
   width: 60%;
   transform: translateX(-110%) translateY(50%);
 }
+
+.full_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+// formulaire
+.subsribe {
+  display: block;
+  width: 100%;
+
+  .flex_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .input_space {
+      background: $theme;
+      height: 80px;
+      width: 48%;
+      border-radius: 17px;
+      border: none;
+      border: 1px solid rgb(255, 255, 255);
+      color: white;
+      font-size: 14px;
+      padding-left: 20px;
+    }
+  }
+
+  .input_textarea {
+    background: $theme;
+    height: 260px;
+    width: 100%;
+    border: none;
+    border-radius: 17px;
+    border: 1px solid rgba(255, 255, 255, 0.637);
+    color: white;
+
+    font: normal normal normal 14px/20px Lato;
+    padding: 20px;
+  }
+
+  .input_space::placeholder,
+  .input_textarea::placeholder {
+    color: rgba(255, 255, 255, 0.582);
+  }
+
+
+}
+
+.btn_submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $theme;
+  width: 224px;
+  height: 70px;
+  background: $theme;
+  border-radius: 15px;
+  font: normal normal bold 18px/79px Lato;
+  letter-spacing: 0.01px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+
+
+.view_gal_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 999;
+  .viewer_gal{
+  display: block;
+  width: 40%;
+  transform:scale(0);
+  transition: 0.3s;
+
+  @media all and (max-width:800px){
+    width: 90%;
+  }
+
+  img{
+    width: 100%;
+  }
+  }
+  
+  
+  }
+  
+  .img_to_view{
+    cursor: pointer;
+  }
+
+  img{
+   cursor: pointer;
+  }
+  
+  .view_gal_container_Active{
+  
+    transform: translateY(0%);
+    opacity: 1;
+    transition: .3s;
+  
+    .viewer_gal{
+      transform:scale(1);
+      transition: .8s;
+    }
+  
+  }
