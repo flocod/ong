@@ -23,6 +23,8 @@
       width: 35%;
       height: 100%;
       background: $theme;
+      background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  object-fit: cover;
       @media all and (max-width: 785px) {
         width: 100%;
         height: auto;
@@ -100,6 +102,7 @@
         right: 0px;
         width: 200px;
         transform: translateY(-30%) translateX(40%);
+        display: none;
         @media all and (max-width: 859px) {
           display: none;
         }

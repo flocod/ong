@@ -21,6 +21,7 @@ body {
   width: 100%;
   height: auto;
   background: #f5f7fe;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   // background: black;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -255,6 +256,7 @@ a {
     border-radius: 15px;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 
     @media all and (max-width: 1245px) {
       height: 50px;
@@ -469,4 +471,44 @@ a {
       transition: .8s;
     }
   
+  }
+
+
+
+
+  .search_news{
+    display: inline-block;
+    width: 70%;
+    height: 70px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    position: relative;
+
+    @media all and (max-width:648px){
+    width: 100%;
+    }
+ 
+    margin-top: 20px;
+    input{
+      width: 100%;
+      height: 100%;
+      background: none;
+      border: none;
+      padding-left: 40px;
+      font-size: 14px;
+      color: white;
+      &::placeholder{
+        color: white;
+      }
+    }
+    .ico{
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateX(-40px) translateY(-50%);
+      color: white;
+      font-size: 25px;
+    }
   }

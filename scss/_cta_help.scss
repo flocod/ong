@@ -5,9 +5,12 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  
   //   height: 580px;
   position: relative;
-  background: $theme 0% 0% no-repeat padding-box;
+  background-color: $theme;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  object-fit: cover;
   flex-wrap: wrap;
   margin-top: 300px;
   margin-bottom: 100px;

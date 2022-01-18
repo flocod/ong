@@ -291,38 +291,49 @@ $(document).ready(function () {
     });
   });
 
-  $(".go_about").on('click',function(){
+
+
+  $("body").on('click','.go_about',function(){
 
     laoding_princ("assets/about.html", function () {
   
     });
 
   });
-  $(".go_team").on('click',function(){
+  $("body").on('click','.go_team',function(){
 
     laoding_princ("assets/team.html", function () {
   
     });
 
   });
-  $(".go_contact").on('click',function(){
+  $("body").on('click','.go_contact',function(){
 
     laoding_princ("assets/contact.html", function () {
   
     });
 
   });
-  $(".go_causes").on('click',function(){
+  $("body").on('click','.go_causes',function(){
 
     laoding_princ("assets/causes.html", function () {
   
     });
 
   });
+
+
   $("body").on('click','.become_volunteer',function(){
 
     laoding_princ("assets/volunteer.html", function () {
       owl_testimonies();
+    });
+
+  });
+  $("body").on('click','.news',function(){
+
+    laoding_princ("assets/news.html", function () {
+     
     });
 
   });

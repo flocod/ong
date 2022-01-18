@@ -18,6 +18,7 @@ body {
   width: 100%;
   height: auto;
   background: #f5f7fe;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   overflow-x: hidden !important;
@@ -313,6 +314,7 @@ a :hover {
   border-radius: 15px;
   color: white;
   font-size: 20px;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1245px) {
@@ -594,6 +596,60 @@ img {
           transform: scale(1);
   -webkit-transition: .8s;
   transition: .8s;
+}
+
+.search_news {
+  display: inline-block;
+  width: 70%;
+  height: 70px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  position: relative;
+  margin-top: 20px;
+}
+
+@media all and (max-width: 648px) {
+  .search_news {
+    width: 100%;
+  }
+}
+
+.search_news input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  padding-left: 40px;
+  font-size: 14px;
+  color: white;
+}
+
+.search_news input::-webkit-input-placeholder {
+  color: white;
+}
+
+.search_news input:-ms-input-placeholder {
+  color: white;
+}
+
+.search_news input::-ms-input-placeholder {
+  color: white;
+}
+
+.search_news input::placeholder {
+  color: white;
+}
+
+.search_news .ico {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateX(-40px) translateY(-50%);
+          transform: translateX(-40px) translateY(-50%);
+  color: white;
+  font-size: 25px;
 }
 
 .header {
@@ -1828,7 +1884,10 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-  background: #336851 0% 0% no-repeat padding-box;
+  background-color: #336851;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  -o-object-fit: cover;
+     object-fit: cover;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 300px;
@@ -3046,6 +3105,9 @@ img {
   width: 35%;
   height: 100%;
   background: #336851;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media all and (max-width: 785px) {
@@ -3155,6 +3217,7 @@ img {
   width: 200px;
   -webkit-transform: translateY(-30%) translateX(40%);
           transform: translateY(-30%) translateX(40%);
+  display: none;
 }
 
 @media all and (max-width: 859px) {
@@ -3707,6 +3770,9 @@ footer {
           justify-content: center;
   width: 100%;
   background: #336851;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: 250px;
   padding-top: 90px;
   color: white;
@@ -4044,6 +4110,9 @@ footer .struct .block2 .struct .logo_footer img {
     width: 500px;
     height: 100%;
     background: #336851;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    -o-object-fit: cover;
+       object-fit: cover;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -4209,6 +4278,7 @@ footer .struct .block2 .struct .logo_footer img {
   padding-top: 150px;
   padding-bottom: 150px;
   background: #336851;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
 }
 
 .banner .text {
@@ -4645,6 +4715,9 @@ footer .struct .block2 .struct .logo_footer img {
           flex-direction: column;
   width: 100%;
   background: #336851;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  -o-object-fit: cover;
+     object-fit: cover;
   padding-top: 100px;
   padding-bottom: 100px;
 }
